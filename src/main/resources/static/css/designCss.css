@@ -1,0 +1,104 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #f8f9fa, #e0f7fa);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+.design-container {
+    background-color: white;
+    padding: 2rem 3rem;
+    margin-top: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 700px;
+}
+
+.design-container h1 {
+    text-align: center;
+    color: #333;
+}
+
+.design-container img {
+    display: block;
+    margin: 0 auto 1.5rem;
+    width: 200px;
+}
+
+form {
+    margin-top: 1rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.ingredient-group h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+    color: #444;
+}
+
+.ingredient-group input[type="checkbox"] {
+    margin-right: 0.4rem;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 0.5rem;
+}
+
+.validationError {
+    color: red;
+    font-size: 0.85rem;
+}
+
+button, input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+button:hover,
+input[type="submit"]:hover {
+    background-color: #43a047;
+}
+
+#logoutForm {
+    text-align: right;
+    margin-bottom: 1rem;
+}
+
+#logoutForm input[type="submit"] {
+    width: auto;
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+    background-color: #e53935;
+}
+
+#logoutForm input[type="submit"]:hover {
+    background-color: #d32f2f;
+}
+
+.inline-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+}

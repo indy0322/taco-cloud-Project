@@ -1,0 +1,79 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    background: linear-gradient(to right, #f8f9fa, #e0f7fa);
+    display: flex;
+    justify-content: center; /*아이템을 가운데로 정렬*/
+    align-items: center; /*수직 정렬*/
+    height: 100vh;  
+    margin: 0;
+}
+
+.login-container {
+    background-color: #ffffff;
+    padding: 2rem 3rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+}
+
+.login-container h1 {
+    margin-bottom: 1rem;
+    color: #333333;
+}
+
+.login-container img {
+    width: 200px;
+    margin-bottom: 1rem;
+}
+
+.error-message {
+    color: #e53935;
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0 0.2rem;
+    text-align: left;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1rem;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.register-link {
+    margin-top: 1rem;
+    display: block;
+}
+
+.register-link a {
+    color: #0277bd;
+    text-decoration: none;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+

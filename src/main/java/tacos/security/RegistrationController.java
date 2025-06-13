@@ -1,5 +1,6 @@
 package tacos.security;
 
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -14,11 +15,10 @@ import org.springframework.web.bind.annotation.RequestBody;
 @RequestMapping("/register")
 public class RegistrationController {
     private UserRepository userRepo;
-    private PasswordEncoder passwordEncoder;
+    private BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
     
-    public RegistrationController(UserRepository userRepo, PasswordEncoder passwordEncoder){
+    public RegistrationController(UserRepository userRepo){
         this.userRepo = userRepo;
-        this.passwordEncoder = passwordEncoder;
     }
 
     @GetMapping
